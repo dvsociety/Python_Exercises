@@ -15,7 +15,7 @@ def custom_max(n1:int, n2:int):
     raise Exception("Algo salio mal")
 
 def max_de_tres(n1: int, n2: int, n3: int):
-    """Dados tres numeros, returna el maximo de ambos
+    """Dados tres numeros, retorna el maximo de ambos
 
     Args:
         n1(int): Primer numero a comparar
