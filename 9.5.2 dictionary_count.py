@@ -13,43 +13,43 @@ Nota: utilizar el módulo random para obtener tiradas aleatorias.
 
 def word_counter(phrase: str):
     list_phrase = phrase.split() 
-    count = {}
+    count_dict = {}
     for word in list_phrase:
-        if word not in count:
-            count[word.lower()] = 1
+        if word not in count_dict:
+            count_dict[word.lower()] = 1
         else:
-            count[word.lower()] += 1 
-    return count
+            count_dict[word.lower()] += 1 
+    return count_dict
 
-# print(word_counter("Que lindo día que hace hoy"))
+print(word_counter("Que lindo día que hace hoy"))
 
 
 def character_counter(phrase: str):
-    count = {}
+    count_dict = {}
     for word in phrase:
         for character in word:
-            if character not in count:
-                count[character.lower()] = 1
+            if character not in count_dict:
+                count_dict[character.lower()] = 1
             else:
-                count[character.lower()] += 1
-    return count
+                count_dict[character.lower()] += 1
+    return count_dict
 
-# print(character_counter("Contando los caracteres de este texto"))
+print(character_counter("Contando los caracteres de este texto"))
 
 import random
 
 def sum_die(throws: int):
     sum = 0
-    count = {}
+    count_dict = {}
     for shoots in range(throws):
         die_one = random.randrange(1,7)
         die_two = random.randrange(1,7)
         sum = die_one + die_two 
-        if sum not in count:
-            count[sum] = 1
+        if sum not in count_dict:
+            count_dict[sum] = 1
         else:
-            count[sum] += 1
+            count_dict[sum] += 1
 
-    return count
+    return count_dict
 
 print(sum_die(30))
