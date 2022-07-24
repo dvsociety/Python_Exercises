@@ -10,8 +10,7 @@ def multiplication(number_one,number_two):
 def higher_multiplication():
     aux = 0 
     max = 0
-    MULTIPLY_AMOUNT = 2
-    for i in range (0,MULTIPLY_AMOUNT):
+    for i in range (0,5):
         number_one = (int(input("numero 1 ")))     
         number_two = (int(input("numero 2 ")))     
         aux = multiplication(number_one,number_two)
@@ -21,4 +20,4 @@ def higher_multiplication():
             max = aux
     return max
 
-print(higher_multiplication())
+# print(higher_multiplication())
