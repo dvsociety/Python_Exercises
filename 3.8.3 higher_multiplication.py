@@ -4,7 +4,7 @@ de dos de ellos. Por ejemplo, si recibe los números 1, 5, -2, -4 debe devolver 
 más grande que se puede obtener entre ellos (8 = −2 × −4).
 """
 
-def higher_multiplication(number_one,number_two, number_three, number_four):
+def higher_multiplication(number_one, number_two, number_three, number_four):
     return max(number_one * number_two, number_one * number_three, number_one * number_four,
             number_two * number_three, number_two * number_four, number_three * number_four)
 
