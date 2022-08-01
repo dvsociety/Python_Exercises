@@ -15,10 +15,10 @@ def higher_multiplication_list(number_one, number_two, number_three, number_four
     list_numbers = [number_one, number_two, number_three, number_four]
     list_numbers.sort()  
     if list_numbers[0] > 0:
-        return list_numbers[2] * list_numbers[3] 
-    elif list_numbers[3] < 0:
+        return list_numbers[-1] * list_numbers[-2] 
+    elif list_numbers[-1] < 0:
         return list_numbers[0] * list_numbers[1]
     else: 
-        return max(list_numbers[0] * list_numbers[1], list_numbers[2] * list_numbers[3])
+        return max(list_numbers[0] * list_numbers[1], list_numbers[-1] * list_numbers[-2])
 
 print(higher_multiplication_list(-2,-8,-5,30))
