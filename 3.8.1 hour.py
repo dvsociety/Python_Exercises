@@ -8,8 +8,9 @@ def to_seconds(hour, minute, second):
     add_seconds = hour * 3600 + minute * 60 + second
     return add_seconds
 
-
-print(to_seconds(1, 1, 1))
+# Version "one liner"
+to_seconds_lambda = lambda hour,minute,second:(hour*3600 + minute*60 + second)
+# print(to_seconds(1, 1, 1))
 
 def to_time(seconds_received):
     hour = int(seconds_received / 3600)
@@ -17,5 +18,4 @@ def to_time(seconds_received):
     second = int((seconds_received % 3600) % 60)
     return (hour, minute, second)
 
-
-print(to_time(63))
+# print(to_time(63))
