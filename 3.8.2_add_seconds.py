@@ -3,8 +3,7 @@ Ejercicio 3.8.2. Usando las funciones del ejercicio anterior, escribir un progra
 usuario dos intervalos expresados en horas, minutos y segundos, sume sus duraciones, y mues-
 tre por pantalla la duración total en horas, minutos y segundos.
 """
-def to_seconds(hour,minute,seconds):
-    return(3600 * hour + 60 * minute + seconds)
+to_seconds = lambda hour, minute, seconds: (3600*hour + 60*minute + seconds)
 
 def to_normal_time(seconds):
     hour = seconds / 3600 
