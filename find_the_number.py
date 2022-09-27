@@ -1,10 +1,9 @@
 """
-Ejercicio 6.6. El programa debe generar un número que el jugador no pueda predecir.
-A continuación, debe pedirle al usuario que introduzca un número de cuatro
-cifras distintas, y cuando éste lo ingresa, procesar la propuesta y evaluar el número de
-aciertos y de coincidencias que tiene de acuerdo al código elegido. Si es el código original,
-se termina el programa con un mensaje de felicitación. En caso contrario, se informa al
-jugador la cantidad de aciertos y la de coincidencias, y se le pide una nueva propuesta.
+El programa genera un número que el jugador no pueda predecir.
+Le pide al usuario que introduzca un número de cuatro cifras distintas, y cuando éste lo ingresa, 
+procesa la propuesta y evalua el número de aciertos y coincidencias que tiene de acuerdo al código elegido. 
+Si es el código original, se termina el programa con un mensaje de felicitación. En caso contrario, 
+se informa al jugador la cantidad de aciertos y la de coincidencias, y se le pide una nueva propuesta.
 Este proceso se repite hasta que el jugador adivine el código.
 """
 
