@@ -17,7 +17,7 @@ def houses_prices(sizes):
         
         return houses_values
 
-print(houses_prices(houses_sizes))
+# print(houses_prices(houses_sizes))
 
 def matriz_houses_prices(sizes):
     start_time = time()
@@ -29,6 +29,6 @@ def matriz_houses_prices(sizes):
     end_time = time() - start_time
     print(end_time)
     
-    # return np.dot(matriz_house_size, house_calcules)
+    return np.dot(matriz_house_size, house_calcules)
 
 print(matriz_houses_prices(houses_sizes))
