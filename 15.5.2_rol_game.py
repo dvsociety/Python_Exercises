@@ -19,7 +19,7 @@ class Character:
         self.speed = 20
 
     def receive_atack(self, atack):
-        self.life += atack
+        self.life -= atack
         if self.life <= 0:
             raise Exception("Personaje asesinado")
 
